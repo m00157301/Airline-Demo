@@ -8,6 +8,7 @@
   top:0px;
 }
 
+/************* Title *************/
 img
 {
   height:28px;
@@ -84,18 +85,12 @@ img
   display: inline-block;
 }
 
-h1
-{
-  text-align:center;
-  width:800px;
-}
-
 .title:nth-child(1)
 {
   margin-left: 5px;
 }
 
-.container
+.left_container
 {
   border:0px solid black;
   width:800px;
@@ -106,12 +101,12 @@ h1
   top:-5px;
 }
 
-.container
+.left_container
 {
   margin-left: 5px;
 }
 
-.carousell
+.airline_carousel
 {
   width:800px;
   height:25px;
@@ -166,58 +161,58 @@ tr td
   text-align:center;
 }
 
-/************* Container 1 *************/
-.container tr td:nth-child(1)
+/************* Left container *************/
+.left_container tr td:nth-child(1)
 {
   color: #FFFFFF;
   width:50px;
 }
 
-.container tr td:nth-child(2)
+.left_container tr td:nth-child(2)
 {
   text-align:left;
   color: #FFFFFF;
   width:200px;
 }
 
-.container tr td:nth-child(3)
+.left_container tr td:nth-child(3)
 {
   text-align:left;
   color: #FFFFFF;
   width:100px;
 }
 
-.container tr td:nth-child(4)
+.left_container tr td:nth-child(4)
 {
   text-align:left;
   color: #FFFFFF;
   width:100px;
 }
 
-.container tr td:nth-child(5)
+.left_container tr td:nth-child(5)
 {
   text-align:center;
   color: #FFFFFF;
   width:40px;
 }
 
-.container tr td:nth-child(6)
+.left_container tr td:nth-child(6)
 {
   width:50px;
 }
 
-.container tr td:nth-child(7)
+.left_container tr td:nth-child(7)
 {
   width:160px;
 }
 
-.container .carousell
+.left_container .airline_carousel
 {
   display: grid;
 }
 
-/************* Container 2 *************/
-.container2
+/************* Right container *************/
+.right_container
 {
   border:0px solid black;
   width:800px;
@@ -227,56 +222,56 @@ tr td
   top:-7px;
 }
 
-.container2 tr td:nth-child(1)
+.right_container tr td:nth-child(1)
 {
   color: #FFFFFF;
   width:50px;
 }
 
-.container2 tr td:nth-child(2)
+.right_container tr td:nth-child(2)
 {
   text-align:left;
   color: #FFFFFF;
   width:200px;
 }
 
-.container2 tr td:nth-child(3)
+.right_container tr td:nth-child(3)
 {
   text-align:left;
   color: #FFFFFF;
   width:100px;
 }
 
-.container2 tr td:nth-child(4)
+.right_container tr td:nth-child(4)
 {
   text-align:left;
   color: #FFFFFF;
   width:100px;
 }
 
-.container2 tr td:nth-child(5)
+.right_container tr td:nth-child(5)
 {
   text-align:center;
   color: #FFFFFF;
   width:40px;
 }
 
-.container2 tr td:nth-child(6)
+.right_container tr td:nth-child(6)
 {
   width:50px;
 }
 
-.container2 tr td:nth-child(7)
+.right_container tr td:nth-child(7)
 {
   width:160px;
 }
 
-.container2 .carousell
+.right_container .airline_carousel
 {
   display: grid;
 }
 
-/************* gate *************/
+/************* Gate *************/
 .gate
 {
   display: table;
@@ -292,7 +287,7 @@ tr td
   display: table-cell;
 }
 
-/************* remarks *************/
+/************* Remarks *************/
 .remarks
 {
   display: table;
