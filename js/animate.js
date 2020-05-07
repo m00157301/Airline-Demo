@@ -13,17 +13,21 @@ $(".left_container .airline_carousel:even").css("background-color", "#657299");
 $(".left_container .airline_carousel:gt(" + stop_zone + ")").css("z-index","-1");
 $(".left_container .airline_carousel").eq(stop_zone).css("background-color", "white");
 
+$(".left_container .airline_carousel").eq(expand_container1+2).addClass("expand");
 $(".left_container .airline_carousel").eq(expand_container1+3).addClass("expand");
 $(".left_container .airline_carousel").eq(expand_container1+4).addClass("expand");
 $(".left_container .airline_carousel").eq(expand_container1+5).addClass("expand");
+$(".left_container .airline_carousel").eq(expand_container1+6).addClass("expand");
 
 /* right_container */
 var expend_target = 8
 $(".right_container .airline_carousel:even").css("background-color", "#343040");
 $(".right_container .airline_carousel:odd").css("background-color", "#657299");
+$(".right_container .airline_carousel").eq(expend_target+1).addClass("expand")
 $(".right_container .airline_carousel").eq(expend_target).addClass("expand")
 $(".right_container .airline_carousel").eq(expend_target-1).addClass("expand")
 $(".right_container .airline_carousel").eq(expend_target-2).addClass("expand")
+$(".right_container .airline_carousel").eq(expend_target-3).addClass("expand")
 
 setTimeout(function () 
 {
@@ -38,14 +42,14 @@ time = setInterval(function()
 	  //Container1
 	  var container1 = $(".left_container .airline_carousel:gt(" + stop_zone + ")");
 	  container1.animate({ "top": "-=25px" }, 500, "linear" )
-    container1.eq(expand_container1+1).toggleClass("expand")
-    container1.eq(expand_container1-2).toggleClass("expand")
+    container1.eq(expand_container1+2).toggleClass("expand")
+    container1.eq(expand_container1-3).toggleClass("expand")
 
     //Container2
 	  var right_container = $(".right_container .airline_carousel");
     right_container.animate({ "top": "-=25px" }, 500, "linear" )
-    right_container.eq(expend_target+1).toggleClass("expand")
-    right_container.eq(expend_target-2).toggleClass("expand")
+    right_container.eq(expend_target+2).toggleClass("expand")
+    right_container.eq(expend_target-3).toggleClass("expand")
   }
   else
   {
